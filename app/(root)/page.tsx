@@ -10,6 +10,7 @@ import {
   getLatestInterviews,
 } from "@/lib/actions/general.action";
 
+
 async function Home() {
   const user = await getCurrentUser();
 
@@ -23,29 +24,32 @@ async function Home() {
 
   return (
     <>
-      <section className="card-cta">
-        <div className="flex flex-col gap-6 max-w-lg">
-          <h2>Get Interview-Ready with AI-Powered Practice & Feedback</h2>
-          <p className="text-lg">
+  
+      <section className="w-full flex flex-col items-center gap-6 py-12 px-4">
+        <div className="flex flex-col gap-6 w-full max-w-4xl items-center text-center px-4">
+          <h2 className="text-4xl font-bold max-w-3xl text-blue-300">
+            Interview Preparation Made Easy 💡🤖🎤
+          </h2>
+          <p className="text-xl max-w-3xl">
             Practice real interview questions & get instant feedback
           </p>
 
-          <Button asChild className="btn-primary max-sm:w-full">
-            <Link href="/interview">Start an Interview</Link>
+          <Button  className="btn-primary w-full max-w-xs text-lg bg-blue-600">
+            <Link href="/create-interview">Start an Interview</Link>
           </Button>
         </div>
 
         <Image
-          src="/robot.png"
+          src="/final.png"
           alt="robo-dude"
-          width={400}
-          height={400}
+          width={600}
+          height={600}
           className="max-sm:hidden"
         />
       </section>
 
       <section className="flex flex-col gap-6 mt-8">
-        <h2>Your Interviews</h2>
+        <h2 className="mx-auto text-blue-400">Your Interviews</h2>
 
         <div className="interviews-section">
           {hasPastInterviews ? (
@@ -67,7 +71,7 @@ async function Home() {
       </section>
 
       <section className="flex flex-col gap-6 mt-8">
-        <h2>Take Interviews</h2>
+        <h2 className="mx-auto text-blue-400" >Check Interviews</h2>
 
         <div className="interviews-section">
           {hasUpcomingInterviews ? (

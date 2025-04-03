@@ -6,7 +6,7 @@ const Page = async () => {
 
   return (
     <>
-      <h3>Interview generation</h3>
+    <h2 className="mx-auto text-blue-400" >Get Ready for the Interview!</h2>
 
       <Agent
         userName={user?.name || "Guest"}
