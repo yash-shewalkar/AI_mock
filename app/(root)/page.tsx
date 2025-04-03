@@ -31,7 +31,7 @@ async function Home() {
             Interview Preparation Made Easy 💡🤖🎤
           </h2>
           <p className="text-xl max-w-3xl">
-            Practice real interview questions & get instant feedback
+          Prepare for your next job interview with AI.
           </p>
 
           <Button  className="btn-primary w-full max-w-xs text-lg bg-blue-600">

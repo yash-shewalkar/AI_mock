@@ -105,7 +105,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
           <h2 className="text-primary-100">RiseUp</h2>
         </div>
 
-        <h3>Practice job interviews with AI</h3>
+        <h3 className="mx-auto text-center">Prepare with RiseUp</h3>
 
         <Form {...form}>
           <form
